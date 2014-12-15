@@ -1,13 +1,14 @@
 package consensus
 
 import (
-	"code.google.com/p/goprotobuf/proto"
 	"container/heap"
-	"github.com/ha/doozerd/store"
 	"log"
 	"net"
 	"sort"
 	"time"
+
+	"github.com/golang/protobuf/proto"
+	"github.com/ha/doozerd/store"
 )
 
 type packet struct {

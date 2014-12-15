@@ -1,13 +1,14 @@
 package consensus
 
 import (
-	"code.google.com/p/goprotobuf/proto"
 	"container/heap"
-	"github.com/ha/doozerd/store"
 	"log"
 	"math/rand"
 	"net"
 	"time"
+
+	"github.com/golang/protobuf/proto"
+	"github.com/ha/doozerd/store"
 )
 
 const initialWaitBound = 1e6 // ns == 1ms
